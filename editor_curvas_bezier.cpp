@@ -72,8 +72,6 @@ int main()
    int opcao=1;
    int opcaoPropriedadeCurva=1;
    int numeroCurvas=0;
-// se a escolha for diferente de 5, ele continua... o que inicialmente é verdade
-// pois escolha é igual a 1
 	while (opcao!=4)
 	{
 	
@@ -161,6 +159,10 @@ int main()
 					
 					
 					scanf("%d",&opcaoPropriedadeCurva);
+					if(opcaoPropriedadeCurva == 5){
+						opcaoPropriedadeCurva = 0;
+						break;
+					}
 					
 					switch (opcaoPropriedadeCurva) {
 						case 1:
@@ -206,8 +208,6 @@ int main()
 							break;
 						}
 					}
-					
-					break;
 				} 
 				break;
 			}case 3:
