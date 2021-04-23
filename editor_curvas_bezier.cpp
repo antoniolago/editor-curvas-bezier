@@ -138,7 +138,7 @@ int main()
 					printf("\n\n ----------------------- ");
 					
 					for(i=0;i<numeroCurvas;i++){
-						printf("\n %i - Modificar Curva %i ", i+1,i+1);
+						printf("\n %i - Modificar Curva %i ", i,i);
 					}
 					printf("\n %i - Voltar ", numeroCurvas+1);
 					
@@ -149,7 +149,6 @@ int main()
 					}
 					fflush(stdin);
 					printf("\n\n Escolha uma propriedade para editar: ");
-					
 					printf("\n\n Curva %i: ", opcaoCurva);
 					printf("\n\n 1 - Ponto Inicial (%.2f,%.2f): ", curvas[opcaoCurva].pontoInicioX,curvas[opcaoCurva].pontoInicioY);
 					printf("\n\n 2 - Ponto Fim (%.2f,%.2f): ", curvas[opcaoCurva].pontoFimX,curvas[opcaoCurva].pontoFimY);
